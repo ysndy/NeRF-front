@@ -13,7 +13,7 @@ const Input = () => {
         // 영상 저장
         Object.values(file).forEach((file) => fd.append("file", file));
 
-        axios.post('video', fd, {
+        axios.post('http://34.121.32.11:8080/video', fd, {
             headers: {
                 "Content-Type": `multipart/form-data; `,
             },
